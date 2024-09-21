@@ -14,6 +14,7 @@ const Appel = () => {
         { Numero: '006', Nom: 'Haissem', date: '2024-08-14', Prénom: 'Imene', etat: 'En attente', Type: 'Sortante' },
         { Numero: '007', Nom: 'Benboudaa', date: '2024-08-15', Prénom: 'Ameena', etat: 'En cours', Type: 'Entrante' },
         { Numero: '008', Nom: 'Haissem', date: '2024-08-14', Prénom: 'Imene', etat: 'En attente', Type: 'Sortante' },
+      
         // Other data...
     ];
 
@@ -53,39 +54,7 @@ const Appel = () => {
 
     return (
         <div className="bg-gray-200 p-6 flex flex-col space-y-6">
-            {/* Container for the rectangles */}
-            <div className="flex justify-around space-x-4">
-                {/* Rectangle 1 */}
-                <div className="bg-white p-4 w-1/5 h-1/4 flex flex-col items-center shadow-md rounded-lg">
-                    <div className="flex items-center">
-                        <FaPhoneAlt className="w-5 h-5 mr-2 text-[#FF0000]" />
-                        <span className="text-lg font-semibold">Total des appels</span>
-                    </div>
-                    <div className="mt-2 text-3xl font-bold">12</div>
-                </div>
-
-                {/* Rectangle 2 */}
-                <div className="bg-white p-4 w-1/5 h-1/4 flex flex-col items-center shadow-md rounded-lg">
-                    <div className="flex items-center">
-                        <FaClock className="w-5 h-5 mr-1 text-[#FF0000]" />
-                        <span className="text-lg font-semibold">Appels en attente</span>
-                    </div>
-                    <div className="mt-2 text-2xl font-bold">15</div>
-                </div>
-
-                {/* Audio drag-and-drop zone */}
-                <div
-                    className="bg-white p-4 w-1/5 h-1/4 flex flex-col items-center shadow-md rounded-lg"
-                    onDrop={handleDrop}
-                    onDragOver={handleDragOver}
-                    style={{ border: '2px dashed #FF0000' }}
-                >
-                    <FaMicrophone className="w-5 h-5 mr-2 text-[#FF0000]" />
-                    <span className="text-lg font-semibold">Drag & Drop Audio</span>
-                    {audioFile && <p>{audioFile.name}</p>}
-                </div>
-            </div>
-
+         
             <div className="bg-white p-4 rounded shadow-md w-[95%] mx-auto">
                 <div className="flex justify-between items-center mb-2">
                     <h2 className="text-lg font-bold">Les appels</h2>

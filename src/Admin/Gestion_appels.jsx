@@ -1,6 +1,6 @@
 import React from 'react';
 import SideBar from '../Components/SideBar1';
-import Appels from '../Components/Appels';
+import Appels from '../Components/Appels2';
 import Header from '../Components/Header';
 
 function Gestion_appels () {

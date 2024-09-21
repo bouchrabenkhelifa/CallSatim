@@ -1,11 +1,20 @@
 import React from 'react'
+import SideBar from '../Components/SideBar2';
+import Appels from '../Components/Appels';
+import Header from '../Components/Header';
 
-function Gestion_appels() {
+function Gestion_agents() {
   return (
-    <div>
-       <h1> hello</h1>
+    <div className="flex  flex-col h-screen">
+    <Header />
+    <div className="flex  flex-grow">
+      <SideBar className="h-full  w-[90%]" />
+      <div className=" flex-grow ">
+      <Appels />
+      </div>
     </div>
+  </div>
   )
 }
 
-export default Gestion_appels
+export default Gestion_agents

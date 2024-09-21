@@ -7,7 +7,7 @@ import GestionClients from './Admin/Gestion_clients';
 import Ajouter_agents from './Admin/Ajouter_agents';
 import List from"./Agents/List_clients";
 import Login from './Components/Login';
-import Acceuil from './Agents/Gestion_appels';
+import Gestion from './Agents/Gestion_appels';
 
 function App() {
   return (
@@ -17,11 +17,12 @@ function App() {
           <Routes>
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/Gestion_agents" element={<GestionAgents />} />
-            <Route path="/Gestion_appels" element={<GestionAppels />} />
+            <Route path="/admin_appels" element={<GestionAppels />} />
+            <Route path="/acceuil_agent" element={<Gestion />} />
             <Route path="/Gestion_clients" element={<GestionClients />} />
             <Route path="/Ajouter_agents" element={<Ajouter_agents />} />
             <Route path="/Ajouter_agents" element={<Ajouter_agents />} />
-            <Route path="/Acceuil" element={<Acceuil/>} />
+     
             <Route path="/clients" element={<List/>} />
             <Route path="/" element={<Login/>} />
 

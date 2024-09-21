@@ -7,7 +7,7 @@ import { FaPhoneAlt, FaClock, FaMicrophone } from 'react-icons/fa';
 
 const Dashboard = () => {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex bg-gray-100 flex-col h-screen">
       <Header />
       <div className="flex h-full">
         {/* Sidebar */}
@@ -17,8 +17,8 @@ const Dashboard = () => {
         <div className="flex-grow p-4 space-y-10">
           {/* Images Section */}
           <div className="flex justify-center gap-10 pt-10">
-            <img className="w-[45%] h-auto object-cover rounded-lg" src={Secteurs} alt="Secteurs" />
-            <img className="w-[45%] h-auto object-cover rounded-lg" src={Graphes} alt="Graphes" />
+            <img className="w-[42%] h-auto object-cover rounded-lg" src={Secteurs} alt="Secteurs" />
+            <img className="w-[42%] h-auto object-cover rounded-lg" src={Graphes} alt="Graphes" />
           </div>
 
           {/* Rectangles Section */}
@@ -29,7 +29,7 @@ const Dashboard = () => {
                 <FaPhoneAlt className="w-6 h-6 mr-2 text-[#FF0000]" />
                 <span className=" font-semibold">Total des appels</span>
               </div>
-              <div className="mt-4 text-2xl font-bold">12</div>
+              <div className=" text-2xl font-bold">12</div>
             </div>
 
             {/* Rectangle 2 */}
@@ -38,7 +38,7 @@ const Dashboard = () => {
                 <FaClock className="w-6 h-6 mr-2 text-[#FF0000]" />
                 <span className=" font-semibold">Appels en attente</span>
               </div>
-              <div className="mt-4 text-2xl font-bold">15</div>
+              <div className="text-2xl font-bold">15</div>
             </div>
 
             {/* Rectangle 2 */}
@@ -47,7 +47,7 @@ const Dashboard = () => {
                 <FaMicrophone className="w-6 h-6 mr-2 text-[#FF0000]" />
                 <span className=" font-semibold">Appel en cours</span>
               </div>
-              <div className="mt-4 text-3xl font-bold">15</div>
+              <div className=" text-3xl font-bold">15</div>
             </div>
           </div>
         </div>

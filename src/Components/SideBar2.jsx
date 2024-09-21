@@ -7,7 +7,7 @@ const SideBar2 = () => {
     const [activeLink, setActiveLink] = useState('calls');
 
     const menuItems = [
-        { name: 'Gestion des appels', icon: <FaFileAlt />, key: '/Acceuil', label: 'Gestion des appels' },
+        { name: 'Gestion des appels', icon: <FaFileAlt />, key: '/acceuil_agent', label: 'Gestion des appels' },
         { name: 'Nos clients', icon: <FaUsers />, key: '/clients', label: 'Nos clients' }
     ];
 
